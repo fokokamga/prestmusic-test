@@ -1,0 +1,170 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('../src/assets/css/fonts.css');
+@import 'vars';
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif !important;
+}
+
+::selection {
+    background: $primary;
+    color: white;
+}
+
+::-moz-selection {
+    background: $primary;
+    color: white;
+}
+
+
+/* --- Disable bootstrap effect----*/
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+.button-behave {
+    cursor: pointer;
+}
+
+.container-mwidth {
+    max-width: 1400px;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+
+/*===== CUSTOM BUTTON ====*/
+
+a.flat-btn-outline {
+    display: inline-block;
+    padding: 1em 1.7em;
+    border: 0.11em solid #FFFFFF;
+    margin: 0 1em 0.3em 0;
+    border-radius: 0.11em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+
+a.flat-btn-outline:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+@media (max-width:992px) {
+    a.flat-btn-outline {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+
+/*====== TITLE CENTER ======*/
+
+.center-title {
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    h1 {
+        font-size: 2.5vw;
+        line-height: 3.5vw;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 3vw;
+        line-height: 4.5vw;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 1vw;
+        line-height: 1vw;
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    p {
+        margin-bottom: 100px;
+    }
+    .line {
+        border-bottom: 1px solid white;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+    .line.grey {
+        border-bottom: 1px solid grey;
+    }
+}
+
+@media (max-width:992px) {
+    .center-title {
+        text-align: center;
+        h1 {
+            font-size: 8vw;
+            line-height: 9vw;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 7vw;
+            line-height: 8vw;
+        }
+        h3 {
+            font-size: 3vw;
+            line-height: 3vw;
+        }
+    }
+}
+
+
+/*====== Rounded image ========*/
+
+.avatar-img-36 {
+    img {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+
+/*====== mat dialog ========*/
+
+.cust-mat-dialog-backdrop {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.cust-mat-dialog {
+    .mat-dialog-container {
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
