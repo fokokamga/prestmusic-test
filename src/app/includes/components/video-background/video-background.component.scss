@@ -1,0 +1,35 @@
+.overlay {
+    background-color: black;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -90;
+}
+
+.image {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -99;
+    display: none;
+}
+
+.video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -100;
+}
+
+@media (max-width:992px) {
+    .video {
+        display: none;
+    }
+    .image {
+        display: block;
+    }
+}

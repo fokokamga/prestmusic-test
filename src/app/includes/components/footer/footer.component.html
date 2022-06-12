@@ -1,0 +1,19 @@
+<div class="footer">
+    <div class="container">
+        <h3>{{'contactTitle' | translate }}</h3>
+        <p>{{'contactDescription' | translate }}</p>
+        <a [routerLink]="['/nous-contacter']" routerLinkActive="router-link-active" class="flat-btn-outline">{{'requestQuote' | translate }}</a>
+
+        <div class="bottom-nav">
+            <a [routerLink]="['/']">Prestmusic</a>
+            <div class="bottom-nav-right">
+                <a class="bottom-link" [routerLink]="['/nous-contacter']" routerLinkActive="router-link-active">Nous contacter</a>
+                <a class="bottom-link" [routerLink]="['/a-propos']">Qui sommes-nous ?</a>
+                <a class="bottom-link" [routerLink]="['/mon-compte']">Mon compte</a>
+                <a class="bottom-link" [routerLink]="['/mention-legales']">Mention légales</a>
+                <a class="bottom-link" [routerLink]="['/cgu']">CGU</a>
+                <a class="copyright"> ©Copyright 2020</a>
+            </div>
+        </div>
+    </div>
+</div>

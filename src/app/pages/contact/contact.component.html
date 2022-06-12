@@ -1,0 +1,48 @@
+<div style="width: 100%;">
+    <div class="contact row">
+        <div class="contact-info col-lg-5">
+            <img src="assets/img/logos/logo_white.png" alt="" width="200px">
+            <h5>Remplissez le formulaire pour obtenir une prestation</h5>
+        </div>
+        <div class="contact-form col-lg-7">
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                <div>
+                    <mat-form-field appearance="">
+                        <mat-label>Prenom</mat-label>
+                        <input matInput formControlName="firstname" id="firstname">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field>
+                        <mat-label>Nom</mat-label>
+                        <input matInput formControlName="name" id="name">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="">
+                        <mat-label>Email</mat-label>
+                        <input matInput formControlName="email" id="email" placeholder="Votre email">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="">
+                        <mat-label>Sujet</mat-label>
+                        <input matInput #sujet maxlength="100" formControlName="subject" id="subject">
+                        <mat-hint align="start"><strong>Nombre de caractères</strong> </mat-hint>
+                        <mat-hint align="end">{{sujet.value.length}} / 100</mat-hint>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="">
+                        <textarea matInput #message maxlength="500" placeholder="Votre message" id="message" formControlName="message"></textarea>
+                        <mat-hint align="start"><strong>Nombre de caractères</strong> </mat-hint>
+                        <mat-hint align="end">{{message.value.length}} / 500</mat-hint>
+                    </mat-form-field>
+                </div>
+                <button type="submit" class="flat-btn-outline" mat-flat-button [disabled]="sending" [disabled]="contactForm.invalid">{{sendingButton}}</button>
+
+            </form>
+
+        </div>
+    </div>
+</div>

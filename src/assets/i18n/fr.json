@@ -1,0 +1,61 @@
+{
+    "requestQuote": "Nous contacter",
+    "learnMore": "En savoir plus",
+
+    "welcomeTitle": "Nous proposons des prestations musicales sur mesure, destinées aux clients exigeants",
+    "welcomeSubTitle": "Bienvenue chez PrestMusic",
+
+    "whoWeAreTitle": "Nos sommes Prestmusic",
+    "whoWeAreSubTitle": "Qui sommes-nous ?",
+    "whoWeAreDescription": "PrestMusic est une entreprise de prestations musicales, basée à Paris, fruit d’une expérience musicale acquise progressivement pendant plus de 10 ans. Elle intervient dans l’évènementiel et propose plusieurs types de services.",
+
+    "whatWeDoTitle": "Nos services",
+    "whatWeDoDescription": "Nous attachons beaucoup d’importance à l’intégrité, être toujours plus proches de nos clients en étant très attentifs à leurs sollicitations et à la réussite de nos prestations.",
+    "services": [{
+            "name": "Animation de Concert",
+            "description": "Vous êtes une chorale, un groupe de musique et vous recherchez un claviériste pour donner de la majesté à vos concerts ? Collaborons ensemble.",
+            "image": "assets/img/services/concert.jpg",
+            "link": "PLhMehRgRka4iSzrS7v9xLdPy-ApVsUE7P",
+            "linkTitle": "Voir nos videos",
+            "price": "A partir de 900 euros"
+        },
+        {
+            "name": "Animation de Mariage",
+            "description": "Vous recherchez un claviériste pour embellir les célébrations liturgiques de vos mariages, ou pour vos soirées ? Contactez nous.",
+            "image": "assets/img/services/wedding.jpg",
+            "link": "PLhMehRgRka4jh6eJ7cj1gZiP0kbHZtwMy",
+            "linkTitle": "Voir nos videos",
+            "price": "A partir de 800 EUROS"
+        },
+        {
+            "name": "Production Instrumentale",
+            "description": "Vous cherchez une solution moins coûteuse pour obtenir des instrumentals? Contactez PrestMusic pour avoir vos instrumentals personnalisés.",
+            "image": "assets/img/services/production.jpg",
+            "link": "PLhMehRgRka4jGUH6M2yJ98VvbvoY4n-vs",
+            "linkTitle": "Voir nos videos",
+            "price": "A partir de 80 EUROS / Instrumental"
+        },
+        {
+            "name": "Formation",
+            "description": "Vous rêvez d’être pianiste/claviériste et voulez vite progresser ? Contactez nous pour avoir une formation personnalisée.",
+            "image": "assets/img/services/school.jpg",
+            "link": "PLhMehRgRka4j0eNJ-24fzCmBerGAizT3c",
+            "linkTitle": "Voir nos videos",
+            "price": "50 EUROS / Heure"
+        }
+    ],
+
+    "equipmentTitle": "Nos équipements",
+    "equipmentDescription1": "L’atout principal de PrestMusic est de faire du « Tout en un » c’est-à-dire pouvoir utiliser peu d’équipements pour offrir plusieurs types de prestation de haute qualité. Nous utilisons un clavier arrangeur Haut de gamme, l’un des meilleurs claviers du monde intégrant des technologies de pointe.",
+    "equipmentDescription2": "Le TYROS 5, surnommé « La puissance du réel » permet de mettre à la disposition dans un seul clavier non seulement les meilleurs instruments mais aussi les meilleurs musiciens. Le Tyros5 ne modifie en rien ce concept : il le magnifie à l'extrême ! Chaque son, chaque style, chaque effet est pensé et conçu pour que toute personne qui en joue et surtout qui en ecoute soit immédiatement plongée dans un univers musical exceptionnel. Pour que l'émotion soit totale.",
+
+    "contactTitle": "Vous avez une question ?",
+    "contactDescription": "Ecrivez-nous",
+
+    "firstLink": "Accueil",
+    "secondLink": "Qui sommes-nous ?",
+    "thirdLink": "Mon compte",
+    "fourthLink": "Mention légales",
+    "fifthLink": "",
+    "sixthLink": ""
+}

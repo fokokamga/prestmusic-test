@@ -1,0 +1,61 @@
+{
+    "requestQuote": "Contact us",
+    "learnMore": "Learn more",
+
+    "welcomeTitle": "We offer customised musical performances for demanding customers",
+    "welcomeSubTitle": "Welcome to PrestMusic",
+
+    "whoWeAreTitle": "We are Prestmusic",
+    "whoWeAreSubTitle": "Who We Are ?",
+    "whoWeAreDescription": "PrestMusic is a music service company, based in Paris, the fruit of a musical experience gradually acquired over more than 10 years. It is involved in events and offers several types of musical performances.",
+
+    "whatWeDoTitle": "Our services",
+    "whatWeDoDescription": "We value integrity, we want to stay more closely in touch with our customers, and to guarantee a quality service.",
+    "services": [{
+            "name": "Live Concert",
+            "description": "Are you a choir, music group or an artist? Are you looking for a keyboardist ? ",
+            "image": "assets/img/services/concert.jpg",
+            "link": "PLhMehRgRka4iSzrS7v9xLdPy-ApVsUE7P",
+            "linkTitle": "Check out our video",
+            "price": "Starting at 900 euros"
+        },
+        {
+            "name": "Wedding",
+            "description": "Are you looking for a keyboardist to further embellish your liturgical celebrations and improve your parties ? Contact us !",
+            "image": "assets/img/services/wedding.jpg",
+            "link": "PLhMehRgRka4jh6eJ7cj1gZiP0kbHZtwMy",
+            "linkTitle": "Check out our video",
+            "price": "Starting at 800 EUROS"
+        },
+        {
+            "name": "Beat Making",
+            "description": "If you are looking for a less expensive solution for beats, contact us !",
+            "image": "assets/img/services/production.jpg",
+            "link": "PLhMehRgRka4jGUH6M2yJ98VvbvoY4n-vs",
+            "linkTitle": "Check out our video",
+            "price": "Starting at 80 EUROS /beat"
+        },
+        {
+            "name": "Formation",
+            "description": "Learn the arranger Keyboard with the specialist Florin KAMGA! Discover a full progressive method for piano beginners. Get all the main notions and techniques to begin!",
+            "image": "assets/img/services/school.jpg",
+            "link": "PLhMehRgRka4j0eNJ-24fzCmBerGAizT3c",
+            "linkTitle": "Check out our video",
+            "price": "50 EUROS / Hour"
+        }
+    ],
+
+    "equipmentTitle": "Our equipment",
+    "equipmentDescription1": "The principal assets of PrestMusic is  all-in-one solution to provide many high quality services. We use an high-end arranger Keyboard, one of the best in the world.",
+    "equipmentDescription2": "The TYROS 5, called The Power of Reality , is the ultimate performance keyboard created by Yamaha, with outstanding sounds, enhanced DSP effects, and accompaniment Styles so real it's like being backed by the world’s finest musicians. The Tyros5 brings a level of authenticity like no instrument before it. ",
+
+    "contactTitle": "Do you have any questions?",
+    "contactDescription": "Contact us !",
+
+    "firstLink": "Home",
+    "secondLink": "About us",
+    "thirdLink": "Sign In",
+    "fourthLink": "Terms of Service",
+    "fifthLink": "",
+    "sixthLink": ""
+}

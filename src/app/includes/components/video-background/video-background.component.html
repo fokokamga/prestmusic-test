@@ -1,0 +1,9 @@
+<div (window:resize)="onResize($event)">
+    <div [style.opacity]="overlayOpacity" class="overlay"></div>
+    <video class="video" *ngIf="canDisplayVideo" autoplay muted loop>
+        <source src="{{ background.video }}" type="video/mp4">
+        <track label="French" kind="subtitles" srclang="en" src="" default>
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="image" [style.background-image]="'url(' + background.image + ')'" *ngIf="!canDisplayVideo"></div>
+</div>

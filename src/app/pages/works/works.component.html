@@ -1,0 +1,37 @@
+<div class="works">
+    <br><br><br><br>
+    <br><br><br>
+    <!--
+    <swiper>
+        <div>
+            Swiper content
+        </div>
+    </swiper>
+    -->
+    <div class="swiper-container" [swiper]="swiperConfig">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" *ngFor="let product of products">
+                <div class="product-detail" (click)="showDetail(product)">
+                    <img class="product-image text-center" alt="work" src="assets/img/image.jpg">
+                    <p>
+                        <span class="product-category">Catégories</span><br>
+                        <span class="product-name">Nom</span><br>
+                        <span class="product-price">24</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-around center" class="progress">
+        <div class="progress-detail">
+            <h3>06/09</h3>
+        </div>
+        <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+        <div class="progress-button">
+            <h3>2</h3>
+        </div>
+    </div>
+
+</div>

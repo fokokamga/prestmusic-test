@@ -1,0 +1,14 @@
+<div class="card rounded shadow" (click)="goToLink()">
+    <div class="card-header">
+        <img class="img-fluid" src="{{ image }}" alt="{{ title }}">
+    </div>
+    <div class="card-body">
+        <h4>{{ title }}</h4>
+        <p>{{ description }}</p>
+
+    </div>
+    <div class="card-footer">
+        <a>{{ linkTitle }} <fa-icon [icon]="faArrowRight"></fa-icon>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,190 @@
+@import '../vars';
+svg {
+    fill: whitesmoke;
+}
+
+.app-container {
+    width: 100%;
+    height: 100%;
+    .app-sidemenu {
+        width: 600px;
+        padding: 60px;
+        overflow: hidden;
+        background-color: $primary;
+        .navbar-nav {
+            overflow-x: hidden;
+            padding-top: 15vh;
+            .nav-link {
+                font-size: 2vw;
+                font-weight: bold;
+                color: white;
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                transition: all 0.3s ease-out;
+            }
+            .nav-link:hover {
+                transform: translate(10px, 0px);
+            }
+            &.active {
+                color: $primary;
+            }
+        }
+    }
+    .navbar {
+        height: 100px;
+        .navbar-brand img {
+            width: 150px;
+        }
+        .nav-link {
+            color: white;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .app-container .app-sidemenu {
+        width: 600px;
+        padding: 60px;
+        .navbar-nav .nav-link {
+            font-size: 3vw;
+            padding: 10px;
+        }
+        .nav-link:hover {
+            transform: translate(10px, 0px);
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .app-container .app-sidemenu {
+        width: 100%;
+        padding: 10px;
+        .navbar-nav .nav-link {
+            font-size: 5vw;
+            text-align: center;
+        }
+        .nav-link:hover {
+            transform: translate(10px, 0px);
+        }
+    }
+}
+
+@media (max-width:300px) {
+    .app-container .app-sidemenu {
+        width: 100%;
+        .navbar-nav .nav-link {
+            font-size: 6vw;
+        }
+        .nav-link:hover {
+            transform: translate(10px, 0px);
+        }
+    }
+}
+
+
+/*-------- Other element ----*/
+
+.button-menu {
+    height: 100%;
+}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    background-color: $secondary;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    .compagny-name a {
+        writing-mode: vertical-rl;
+        text-orientation: sideways-right;
+        transform: rotate(180deg);
+        padding: 18px 23px !important;
+    }
+    .app-language {
+        a {
+            font-size: 9pt;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+}
+
+.place-order {
+    display: none;
+    float: right;
+    fa-icon {
+        margin-left: 5px;
+        font-size: 10pt;
+    }
+}
+
+.flat-btn-outline {
+    margin: auto;
+}
+
+ul.sidenav> :last-child {
+    margin-top: auto;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: white;
+    padding: 18px 28px;
+    text-decoration: none;
+}
+
+.simple-logo {
+    width: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul.sidenav li a.active {
+    background-color: #2E59AB;
+    color: white;
+}
+
+div.content {
+    overflow: auto;
+    height: 100%;
+    /* margin-left: 70px; */
+}
+
+@media screen and (max-width: 992px) {
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        flex-direction: initial;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {
+        margin-left: 0;
+    }
+    .place-order {
+        display: block;
+    }
+    .social-logo {
+        display: none;
+    }
+    .compagny-name {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}

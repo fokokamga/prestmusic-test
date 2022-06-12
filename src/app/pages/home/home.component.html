@@ -1,0 +1,52 @@
+<div class="welcome">
+    <app-video-background [background]="background" collapseWidth="992" overlayOpacity="0.6"></app-video-background>
+    <app-navbar logoColor="light"></app-navbar>
+    <div class="welcome-title-text" data-aos="fade-up" data-aos-duration="800">
+        <h3 class="text-center">{{'welcomeSubTitle' | translate }}</h3>
+        <h1 class="text-center">{{'welcomeTitle' | translate }}</h1>
+    </div>
+</div>
+
+<div class="who-we-are">
+    <div class="container">
+        <div class="center-title">
+            <h3>{{'whoWeAreSubTitle' | translate }}</h3>
+            <h1>{{'whoWeAreTitle' | translate }}</h1>
+            <div class="line"></div>
+        </div>
+        <h5>{{'whoWeAreDescription' | translate }}</h5>
+        <div class="text-center">
+            <a [routerLink]="['/a-propos']" class="flat-btn-outline">{{'learnMore' | translate }}</a>
+        </div>
+    </div>
+</div>
+
+<div class="what-we-do">
+    <div class="container-fluid">
+        <div class="center-title">
+            <h2>Nos services</h2>
+            <p>See updates to help you with your work, and subscribe to our monthly TensorFlow newsletter to get the latest announcements sent directly to your inbox.</p>
+        </div>
+        <div class="row services">
+            <div class="col-lg-3 col-md-6 col-sm-6" *ngFor="let service of services">
+                <app-card (click)="togglePlaylist(service.link)" title="{{ service.name }}" description="{{ service.description }}" image="{{ service.image }}" link="{{ service.link }}" linkTitle="{{ service.linkTitle }}">
+                </app-card>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="equipment">
+    <div class="container">
+        <div class="center-title">
+            <h2>Notre équipement</h2>
+            <div class="line grey"></div>
+            <p>L’atout principal de PrestMusic est de faire du « Tout en un » c’est-à-dire pouvoir utiliser peu d’équipements pour offrir plusieurs types de prestation de haute qualité. Nous utilisons un clavier arrangeur Haut de gamme, l’un des meilleurs
+                claviers du monde intégrant des technologies de pointe.
+            </p>
+            <p>Le TYROS 5, surnommé « La puissance du réel » permet de mettre à la disposition dans un seul clavier non seulement les meilleurs instruments mais aussi les meilleurs musiciens. Le Tyros5 ne modifie en rien ce concept : il le magnifie à l'extrême
+                ! Chaque son, chaque style, chaque effet est pensé et conçu pour que toute personne qui en joue et surtout qui en ecoute soit immédiatement plongée dans un univers musical exceptionnel. Pour que l'émotion soit totale.</p>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
